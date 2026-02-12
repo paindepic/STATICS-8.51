@@ -28,11 +28,13 @@
 #include <cassert>
 
 // MinHook
-#include "minhook/minhook.h"
+#include "minhook/MinHook.h"
 
-// UE4 SDK
-#include "SDK/UE4.h"
-#include "SDK/Fortnite.h"
+// UE4 SDK - Fortnite 8.51 Generated SDK
+#include "SDK/SDK.hpp"
+
+// Use SDK namespace
+using namespace SDK;
 
 // Logging
 #define Log(fmt, ...) printf("[Project Reboot 8.51] " fmt "\n", ##__VA_ARGS__)
@@ -77,15 +79,8 @@ namespace Hooking {
 }
 
 // Initialize GObjects for UE4
-inline void InitGObjects() {
-    auto GObjectsAddress = GET_OFFSET(0x7A5B0A0); // Offset for 8.51
-    auto GObjects = (FUObjectArray*)GObjectsAddress;
-    if (!GObjects) {
-        Log("Failed to initialize GObjects!");
-        return;
-    }
-    Log("GObjects initialized successfully!");
-}
+// Note: InitGObjects() is already defined in SDK/Basic.hpp
+// We just need to call it from dllmain.cpp
 
 // Project Reboot 8.51 - Core headers
 #include "Globals.h"
