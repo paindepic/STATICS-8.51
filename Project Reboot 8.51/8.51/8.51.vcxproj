@@ -85,37 +85,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="framework.h" />
-    <ClCompile Include="Globals.h" />
-    <ClCompile Include="MissingFunctions.h" />
-    <ClCompile Include="Misc.h" />
-    <ClCompile Include="PE.h" />
-    <ClCompile Include="Net.h" />
-    <ClCompile Include="NetDriver.h" />
-    <ClCompile Include="GameMode.h" />
-    <ClCompile Include="Controller.h" />
-    <ClCompile Include="AbilitySystemComponent.h" />
-    <ClCompile Include="Pawn.h" />
-    <ClCompile Include="FortWeapon.h" />
-    <ClCompile Include="FortPickup.h" />
-    <ClCompile Include="BuildingActor.h" />
-    <ClCompile Include="BuildingContainer.h" />
-    <ClCompile Include="FortInventory.h" />
-    <ClCompile Include="Looting.h" />
-    <ClCompile Include="QuestManager.h" />
-    <ClCompile Include="AIController.h" />
-    <ClCompile Include="ServerBotManager.h" />
-    <ClCompile Include="PlayerBots.h" />
-    <ClCompile Include="Bots.h" />
-    <ClCompile Include="BotNames.h" />
-    <ClCompile Include="Vehicles.h" />
-    <ClCompile Include="Farming.h" />
-    <ClCompile Include="Teams.h" />
-    <ClCompile Include="Abilities.h" />
-    <ClCompile Include="PC.h" />
-    <ClCompile Include="backend.h" />
-    <ClCompile Include="gaymode.h" />
-    <ClCompile Include="ue.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
@@ -149,6 +118,14 @@
     <ClInclude Include="backend.h" />
     <ClInclude Include="gaymode.h" />
     <ClInclude Include="ue.h" />
+    <ClInclude Include="SDK\UE4.h" />
+    <ClInclude Include="SDK\Fortnite.h" />
+    <ClInclude Include="SDK\SDK.hpp" />
+    <ClInclude Include="SDK\Basic.hpp" />
+    <ClInclude Include="SDK\PropertyFixup.hpp" />
+    <ClInclude Include="SDK\UnrealContainers.hpp" />
+    <ClInclude Include="SDK\UtfN.hpp" />
+    <ClInclude Include="SDK\NameCollisions.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

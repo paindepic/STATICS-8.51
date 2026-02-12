@@ -3,27 +3,41 @@
 
 // Stub implementations for missing functions from Volcano 8.51
 
-void InitHoksPC() {
-    // Initialize PC hooks
-    LOG_("Initializing PC hooks...");
-    
-    // These would normally be defined in PC.h but are missing
-    // We'll add basic implementations here
+void InitHoksPC();
+void InitFarming();
+void InitPawnHooks();
+void InitVehicleHooks();
+
+// ServerReplicateActors for NetDriver
+inline void ServerReplicateActors(void* ReplicationDriver, float DeltaSeconds) {
+    // Placeholder - would normally call the engine's replication system
 }
 
-void InitFarming() {
-    // Initialize farming system
-    LOG_("Initializing farming system...");
+// CreateNetDriver for GameMode
+inline void* CreateNetDriver(void* Engine, void* World, SDK::FName NetDriverDefinition) {
+    // Placeholder - would normally create a net driver
+    return nullptr;
 }
 
-void InitPawnHooks() {
-    // Initialize pawn hooks
-    LOG_("Initializing pawn hooks...");
+// InitListen for net driver initialization
+inline bool InitListen(void* Driver, void* World, SDK::FURL& URL, bool bReuseAddrAndPort, SDK::FString& Error) {
+    // Placeholder
+    return true;
 }
 
-void InitVehicleHooks() {
-    // Initialize vehicle hooks
-    LOG_("Initializing vehicle hooks...");
+// SetWorld for net driver
+inline void SetWorld(void* Driver, void* World) {
+    // Placeholder
+}
+
+// Listen function for gaymode.h
+inline void Listen() {
+    Log("Listen() called - placeholder implementation");
+}
+
+// GiveAbilityAndActivateOnce placeholder
+inline void GiveAbilityAndActivateOnce(SDK::UAbilitySystemComponent* ASC, void* Handle, SDK::FGameplayAbilitySpec& Spec) {
+    Log("GiveAbilityAndActivateOnce called - placeholder implementation");
 }
 
 // Hook functions that are referenced but not defined
