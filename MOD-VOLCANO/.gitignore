@@ -1,0 +1,85 @@
+# MOD-VOLCANO .gitignore
+
+# Build directories
+x64/
+Debug/
+Release/
+*.log
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# Visual Studio temporary files
+*.suo
+*.user
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.tlog
+*.lastbuildstate
+
+# Visual Studio cache directories
+.vs/
+
+# Rider cache
+.idea/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Uncomment this type if you need ignore .so files
+#*.so
+
+# Uncomment this type if you need ignore .dll files  
+#*.dll
+
+# Uncomment this type if you need ignore .exe files
+#*.exe
+
+# Uncomment this type if you need ignore .apk files
+#*.apk
+
+# Logs
+*.log
+
+# Temporary files
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+FortniteLogs.log
+config.local.ini
+
+# Steam and Epic Games
+steam_appid.txt
+FortniteClient-Win64-Shipping.exe
+FortniteClient-Win64-Shipping.pdb
+*.pak
+*.sig
+*.locres
+*.uexp
+*.uasset
+
+# Fortnite SDK generated files
+*.h.cpp
+*.generated.cpp
