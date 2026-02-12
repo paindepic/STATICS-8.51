@@ -1,107 +1,68 @@
 #pragma once
-#include "framework.h"
 
-// Stub implementations for missing functions from Volcano 8.51
+// Forward declarations for functions referenced in dllmain.cpp but defined elsewhere
 
-void InitHoksPC() {
-    // Initialize PC hooks
-    LOG_("Initializing PC hooks...");
-    
-    // These would normally be defined in PC.h but are missing
-    // We'll add basic implementations here
-}
+// From gaymode.h
+void HOKSREAL();
 
-void InitFarming() {
-    // Initialize farming system
-    LOG_("Initializing farming system...");
-}
+// From PC.h
+void InitHoksPC();
 
-void InitPawnHooks() {
-    // Initialize pawn hooks
-    LOG_("Initializing pawn hooks...");
-}
+// From Abilities.h
+void InitAbilities();
 
-void InitVehicleHooks() {
-    // Initialize vehicle hooks
-    LOG_("Initializing vehicle hooks...");
-}
+// From Farming.h
+void InitFarming();
 
-// Hook functions that are referenced but not defined
-bool TickFlushHook(void* a1) {
-    LOG_("TickFlushHook called");
-    return true;
-}
+// From Pawn.h
+void InitPawnHooks();
 
-void* TickFlushOG = nullptr;
+// From Vehicles.h
+void InitVehicleHooks();
 
-void* DispatchReqHook(void* a1, void* a2) {
-    LOG_("DispatchReqHook called");
-    return nullptr;
-}
+// Hook function declarations that are defined inline in dllmain.cpp
+// These need to be declared before being used
 
-void* DispatchReqOG = nullptr;
+// TickFlush hook (0x2D39300)
+typedef bool (*TickFlushFn)(void*);
+extern TickFlushFn TickFlushOG;
+bool TickFlushHook(void* a1);
 
-void KickPlayer(void* a1) {
-    LOG_("KickPlayer called");
-}
+// DispatchRequest hook (0xCF2E80)
+typedef void* (*DispatchReqFn)(void*, void*);
+extern DispatchReqFn DispatchReqOG;
+void* DispatchReqHook(void* a1, void* a2);
 
-void ChangeGameSessionId(void* a1) {
-    LOG_("ChangeGameSessionId called");
-}
+// Other hook functions
+void KickPlayer(void* a1);
+void ChangeGameSessionId(void* a1);
+void ValFailure1(void* a1);
+void NoReserve(void* a1);
+int UWorldGetNetMode(void* a1);
+int AActorGetNetMode(void* a1);
+void NoMcp(void* a1);
 
-void ValFailure1(void* a1) {
-    LOG_("ValFailure1 called");
-}
+// K2_CommitExecute hook (0x8C1F70) - declared in Inventory.h
+// void K2_CommitExecuteHook(UFortGameplayAbility* a1);
+// extern void (*K2_CommitExecute)(UFortGameplayAbility*);
 
-void NoReserve(void* a1) {
-    LOG_("NoReserve called");
-}
+// PickTeam hook (0xFA9B20)
+void PickTeamHook(void* a1);
 
-int UWorldGetNetMode(void* a1) {
-    LOG_("UWorldGetNetMode called");
-    return 3; // NM_DedicatedServer
-}
+// SetMegaStormStuff hook (0xFB9830)
+typedef void (*SetMegaStormStuffFn)(void*);
+extern SetMegaStormStuffFn SetMegaStormStuffidkREALOG;
+void SetMegaStormStuffHOOK(void* a1);
 
-int AActorGetNetMode(void* a1) {
-    LOG_("AActorGetNetMode called");
-    return 3; // NM_DedicatedServer
-}
+// sub_7FF6B9B17A60 hook (0x18A7A60) - declared in Inventory.h
+// extern void (*sub_7FF6B9B17A60_OG)(AFortWeapon* a1, unsigned int a2);
+// void sub_7FF6B9B17A60(AFortWeapon* a1, unsigned int a2);
 
-void NoMcp(void* a1) {
-    LOG_("NoMcp called");
-}
+// CanActivateAbility hook (0x830630)
+void CanActivateAbility(void* a1);
 
-void PickTeamHook(void* a1) {
-    LOG_("PickTeamHook called");
-}
+// CollectGarbage hook (0x1E054E0)
+void CollectGarbage(void* a1);
 
-void SetMegaStormStuffHOOK(void* a1) {
-    LOG_("SetMegaStormStuffHOOK called");
-}
-
-void* SetMegaStormStuffidkREALOG = nullptr;
-
-void sub_7FF6B9B17A60(void* a1) {
-    LOG_("sub_7FF6B9B17A60 called");
-}
-
-void* sub_7FF6B9B17A60_OG = nullptr;
-
-int GetMaxTickRate(void* a1) {
-    LOG_("GetMaxTickRate called");
-    return 120; // Default tick rate
-}
-
-void CollectGarbage(void* a1) {
-    LOG_("CollectGarbage called");
-}
-
-void CanActivateAbility(void* a1) {
-    LOG_("CanActivateAbility called");
-}
-
-void K2_CommitExecuteHook(void* a1) {
-    LOG_("K2_CommitExecuteHook called");
-}
-
-void* K2_CommitExecute = nullptr;
+// GetMaxTickRate virtual hook
+int GetMaxTickRate(void* a1);

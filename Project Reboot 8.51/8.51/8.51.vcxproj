@@ -51,12 +51,13 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -67,13 +68,14 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <SDLCheck>true</SDLCheck>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -85,41 +87,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="framework.h" />
-    <ClCompile Include="Globals.h" />
-    <ClCompile Include="MissingFunctions.h" />
-    <ClCompile Include="Misc.h" />
-    <ClCompile Include="PE.h" />
-    <ClCompile Include="Net.h" />
-    <ClCompile Include="NetDriver.h" />
-    <ClCompile Include="GameMode.h" />
-    <ClCompile Include="Controller.h" />
-    <ClCompile Include="AbilitySystemComponent.h" />
-    <ClCompile Include="Pawn.h" />
-    <ClCompile Include="FortWeapon.h" />
-    <ClCompile Include="FortPickup.h" />
-    <ClCompile Include="BuildingActor.h" />
-    <ClCompile Include="BuildingContainer.h" />
-    <ClCompile Include="FortInventory.h" />
-    <ClCompile Include="Looting.h" />
-    <ClCompile Include="QuestManager.h" />
-    <ClCompile Include="AIController.h" />
-    <ClCompile Include="ServerBotManager.h" />
-    <ClCompile Include="PlayerBots.h" />
-    <ClCompile Include="Bots.h" />
-    <ClCompile Include="BotNames.h" />
-    <ClCompile Include="Vehicles.h" />
-    <ClCompile Include="Farming.h" />
-    <ClCompile Include="Teams.h" />
-    <ClCompile Include="Abilities.h" />
-    <ClCompile Include="PC.h" />
-    <ClCompile Include="backend.h" />
-    <ClCompile Include="gaymode.h" />
-    <ClCompile Include="ue.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
     <ClInclude Include="Globals.h" />
+    <ClInclude Include="HelperFunctions.h" />
+    <ClInclude Include="HookImplementations.h" />
     <ClInclude Include="MissingFunctions.h" />
     <ClInclude Include="Misc.h" />
     <ClInclude Include="PE.h" />
@@ -134,6 +107,7 @@
     <ClInclude Include="BuildingActor.h" />
     <ClInclude Include="BuildingContainer.h" />
     <ClInclude Include="FortInventory.h" />
+    <ClInclude Include="Inventory.h" />
     <ClInclude Include="Looting.h" />
     <ClInclude Include="QuestManager.h" />
     <ClInclude Include="AIController.h" />
