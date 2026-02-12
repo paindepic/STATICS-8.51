@@ -4,12 +4,23 @@
 // Global variables
 uintptr_t ImageBase = (uintptr_t)GetModuleHandleW(0);
 
+// GObjects pointer
+TUObjectArray* GObjects = nullptr;
+
 // Function prototypes
 void InitConsole();
 void LoadWorld();
 void Hook();
 void WaitForLogin();
 DWORD Main(LPVOID);
+
+// Initialize GObjects - implementation for SDK declaration
+namespace SDK {
+    void InitGObjects() {
+        GObjects = reinterpret_cast<TUObjectArray*>(ImageBase + 0x5A47438);
+        Log("GObjects initialized at 0x%p", GObjects);
+    }
+}
 
 // Console initialization
 void InitConsole() {

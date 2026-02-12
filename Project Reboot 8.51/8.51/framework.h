@@ -28,43 +28,13 @@
 #include <cassert>
 
 // MinHook
-#include "minhook/minhook.h"
+#include "minhook/MinHook.h"
 
-// UE4 SDK
-#include "SDK/UE4.h"
-#include "SDK/Fortnite.h"
+// UE4 SDK - Fortnite 8.51 Generated SDK
+#include "SDK/SDK.hpp"
 
-// Project Reboot 8.51
-#include "Globals.h"
-#include "MissingFunctions.h"
-#include "Misc.h"
-#include "PE.h"
-#include "Net.h"
-#include "NetDriver.h"
-#include "GameMode.h"
-#include "Controller.h"
-#include "AbilitySystemComponent.h"
-#include "Pawn.h"
-#include "FortWeapon.h"
-#include "FortPickup.h"
-#include "BuildingActor.h"
-#include "BuildingContainer.h"
-#include "FortInventory.h"
-#include "Looting.h"
-#include "QuestManager.h"
-#include "AIController.h"
-#include "ServerBotManager.h"
-#include "PlayerBots.h"
-#include "Bots.h"
-#include "BotNames.h"
-#include "Vehicles.h"
-#include "Farming.h"
-#include "Teams.h"
-#include "Abilities.h"
-#include "PC.h"
-#include "backend.h"
-#include "gaymode.h"
-#include "ue.h"
+// Use SDK namespace
+using namespace SDK;
 
 // Logging
 #define Log(fmt, ...) printf("[Project Reboot 8.51] " fmt "\n", ##__VA_ARGS__)
@@ -73,6 +43,9 @@
 // Helper macros
 #define IMAGE_BASE ((uintptr_t)GetModuleHandleW(0))
 #define GET_OFFSET(addr) (IMAGE_BASE + addr)
+
+// External ImageBase declaration for use in other files
+extern uintptr_t ImageBase;
 
 // Memory utilities
 namespace Memory {
@@ -100,44 +73,48 @@ namespace Memory {
 
 // Hooking utilities
 namespace Hooking {
-    inline void VirtualHook(void* object, int vtableIndex, void* hookFunction, void** originalFunction = nullptr) {
-        void** vtable = *(void***)object;
-        if (originalFunction) *originalFunction = vtable[vtableIndex];
-        DWORD oldProtect;
-        VirtualProtect(&vtable[vtableIndex], sizeof(void*), PAGE_READWRITE, &oldProtect);
-        vtable[vtableIndex] = hookFunction;
-        VirtualProtect(&vtable[vtableIndex], sizeof(void*), oldProtect, &oldProtect);
-    }
-
     inline uintptr_t GetOffsetBRUH(uintptr_t offset) {
-        return IMAGE_BASE + offset;
+        return ImageBase + offset;
     }
-}
-
-// Global variables
-namespace Globals {
-    inline bool bCreativeEnabled = false;
-    inline bool bSTWEnabled = false;
-    inline bool bDebugMode = false;
-    inline bool bBotsEnabled = true;
-    inline int MaxBots = 50;
-    inline bool bTeamsEnabled = true;
-    inline bool bFarmingEnabled = true;
-    inline bool bBuildingEnabled = true;
-    inline bool bVehiclesEnabled = true;
-    inline bool bLootingEnabled = true;
-    inline bool bAbilitiesEnabled = true;
-    inline bool bBackendEnabled = false;
-    inline std::string BackendURL = "http://localhost:3000";
 }
 
 // Initialize GObjects for UE4
-inline void InitGObjects() {
-    auto GObjectsAddress = GET_OFFSET(0x7A5B0A0); // Update this offset for 8.51
-    auto GObjects = (FUObjectArray*)GObjectsAddress;
-    if (!GObjects) {
-        Log("Failed to initialize GObjects!");
-        return;
-    }
-    Log("GObjects initialized successfully!");
-}
+// Note: InitGObjects() is already defined in SDK/Basic.hpp
+// We just need to call it from dllmain.cpp
+
+// Project Reboot 8.51 - Core headers
+#include "Globals.h"
+#include "HelperFunctions.h"
+#include "MissingFunctions.h"
+#include "HookImplementations.h"
+#include "ue.h"
+
+// Project Reboot 8.51 - Feature modules
+#include "Misc.h"
+#include "PE.h"
+#include "Net.h"
+#include "NetDriver.h"
+#include "GameMode.h"
+#include "Controller.h"
+#include "AbilitySystemComponent.h"
+#include "Pawn.h"
+#include "FortWeapon.h"
+#include "FortPickup.h"
+#include "BuildingActor.h"
+#include "BuildingContainer.h"
+#include "FortInventory.h"
+#include "Inventory.h"
+#include "Looting.h"
+#include "QuestManager.h"
+#include "AIController.h"
+#include "ServerBotManager.h"
+#include "PlayerBots.h"
+#include "Bots.h"
+#include "BotNames.h"
+#include "Vehicles.h"
+#include "Farming.h"
+#include "Teams.h"
+#include "Abilities.h"
+#include "PC.h"
+#include "backend.h"
+#include "gaymode.h"
