@@ -1,0 +1,26 @@
+# Build outputs
+**/x64/
+**/x86/
+**/Debug/
+**/Release/
+**/Bin/
+**/Binaries/
+**/Intermediate/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.vcxproj.user
+*.vcxproj.filters.user
+
+# Logs
+*.log
+FortniteLogs.log
+Spectra_log.txt
+
+# OS
+.DS_Store
+Thumbs.db
