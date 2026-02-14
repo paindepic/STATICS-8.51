@@ -1,0 +1,538 @@
+- generic [ref=e2]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - button "Guide" [ref=e9] [cursor=pointer]:
+          - generic [ref=e12]:
+            - img
+        - link "YouTube Home" [ref=e14] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e19]:
+            - img
+        - button "Skip navigation" [ref=e23] [cursor=pointer]:
+          - generic [ref=e24]: Skip navigation
+      - generic [ref=e28]:
+        - search [ref=e29]:
+          - generic [ref=e30]:
+            - combobox "Search" [expanded] [ref=e33]
+            - button "Search" [ref=e34] [cursor=pointer]:
+              - generic [ref=e37]:
+                - img
+        - generic [ref=e39]:
+          - button "Search with your voice" [ref=e41] [cursor=pointer]:
+            - generic [ref=e339]:
+              - img
+          - tooltip "tooltip"
+      - generic [ref=e48]:
+        - button "Settings" [ref=e53] [cursor=pointer]:
+          - generic [ref=e341]:
+            - img
+        - link "Sign in" [ref=e57] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Fwatch%253Fv%253DgCCY6DzOQbc&hl=en&ec=65620
+          - generic [ref=e343]:
+            - img
+          - generic [ref=e60]: Sign in
+  - main [ref=e65]:
+    - generic [ref=e66]:
+      - generic [ref=e68]:
+        - generic [ref=e73]:
+          - generic [ref=e345]:
+            - img
+          - generic [ref=e75]:
+            - generic [ref=e76]: Sign in to confirm you’re not a bot
+            - generic [ref=e77]:
+              - text: This helps protect our community.
+              - link "Learn more" [ref=e78] [cursor=pointer]:
+                - /url: https://support.google.com/youtube/answer/3037019#zippy=%2Ccheck-that-youre-signed-into-youtube
+            - link "Sign in" [ref=e82] [cursor=pointer]:
+              - /url: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fwatch%253Fv%253DgCCY6DzOQbc&hl=en
+              - generic [ref=e83]: Sign in
+        - generic [ref=e87]:
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - heading "Solo Victory Royale on Season 8 Fortnite Battle Royale No Commentary" [level=1] [ref=e91]
+              - generic [ref=e92]:
+                - generic [ref=e93]:
+                  - generic [ref=e94]:
+                    - link [ref=e95] [cursor=pointer]:
+                      - /url: /@EstepGaming
+                    - generic [ref=e97]:
+                      - generic "EstepGaming" [ref=e101]:
+                        - link "EstepGaming" [ref=e102] [cursor=pointer]:
+                          - /url: /@EstepGaming
+                      - generic "158 subscribers" [ref=e103]
+                  - generic [ref=e107]:
+                    - button "Subscribe to EstepGaming." [ref=e109] [cursor=pointer]:
+                      - generic [ref=e110]: Subscribe
+                    - generic:
+                      - generic:
+                        - generic:
+                          - img
+                      - generic:
+                        - img
+                - generic [ref=e117]:
+                  - generic [ref=e118]:
+                    - generic [ref=e122]:
+                      - button "like this video along with 12 other people" [ref=e126] [cursor=pointer]:
+                        - generic [ref=e347]:
+                          - img
+                        - generic [ref=e129]: "12"
+                      - button "Dislike this video" [ref=e136] [cursor=pointer]:
+                        - generic [ref=e349]:
+                          - img
+                    - button "Share" [ref=e144] [cursor=pointer]:
+                      - generic [ref=e351]:
+                        - img
+                      - generic [ref=e147]: Share
+                  - button "Save to playlist" [ref=e154] [cursor=pointer]:
+                    - generic [ref=e353]:
+                      - img
+                    - generic [ref=e157]: Save
+                  - button "More actions" [ref=e162] [cursor=pointer]:
+                    - generic [ref=e355]:
+                      - img
+              - generic [ref=e170] [cursor=pointer]:
+                - generic [ref=e171]:
+                  - generic [ref=e173]: 734 views 6 years ago
+                  - tooltip "tooltip"
+                - generic [ref=e174]:
+                  - generic [ref=e178]:
+                    - text: Fortnite
+                    - link "https://store.playstation.com/#!/en-u..." [ref=e180]:
+                      - /url: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2k4MVN5MXMzVTNMZXNwRVVoTVRiWFZ4bmNuZ3xBQ3Jtc0tsay1RUzN1MllsYklCaWVVcDZmVkNMVWNGN2I1a1daYXozUHdCTDB1bVl3YzZMZDhJX192UUd1cnRFbWt1eTc3VnBPeEQ5MFNuY0dGMjBUSVpsd3BsVWJVeTdNYmVxLVAwcEN2NHU2dExlWEZPMno2SQ&q=https%3A%2F%2Fstore.playstation.com%2F%23%21%2Fen-us%2Ftid%3DCUSA07022_00&v=gCCY6DzOQbc
+                  - button "...more" [ref=e181]
+            - generic [ref=e185]:
+              - link "Fortnite 2017 Browse game" [ref=e187] [cursor=pointer]:
+                - /url: /channel/UCXzGWycANrrfyBmzX6JMsvQ
+                - generic [ref=e190]:
+                  - generic [ref=e191]: Fortnite
+                  - generic [ref=e192]: "2017"
+                  - generic [ref=e193]:
+                    - generic [ref=e194]: Browse game
+                    - generic [ref=e357]:
+                      - img
+              - link "Gaming Browse all gaming" [ref=e197] [cursor=pointer]:
+                - /url: /gaming
+                - generic [ref=e200]:
+                  - generic [ref=e201]: Gaming
+                  - generic [ref=e202]:
+                    - generic [ref=e203]: Browse all gaming
+                    - generic [ref=e359]:
+                      - img
+          - text: •
+      - generic [ref=e209]:
+        - generic [ref=e211] [cursor=pointer]:
+          - link [ref=e212]:
+            - /url: /watch?v=uhP9LJAyPy8
+            - generic [ref=e218]: 22:51
+          - generic [ref=e220]:
+            - generic [ref=e221]:
+              - heading "Fortnite First season 5 Solo Win ( no commentary ) 22 minutes" [level=3] [ref=e222]:
+                - link "Fortnite First season 5 Solo Win ( no commentary ) 22 minutes" [ref=e223]:
+                  - /url: /watch?v=uhP9LJAyPy8
+                  - text: Fortnite First season 5 Solo Win ( no commentary )
+              - generic [ref=e225]:
+                - generic [ref=e227]: Decay
+                - generic [ref=e228]:
+                  - generic [ref=e229]: 128K views
+                  - generic [ref=e230]: •
+                  - generic [ref=e231]: 7 years ago
+            - button "More actions" [ref=e234]:
+              - generic [ref=e434]:
+                - img
+        - generic [ref=e241] [cursor=pointer]:
+          - link [ref=e242]:
+            - /url: /watch?v=wGP5zVSYggw&pp=ugUHEgVlbi1VUw%3D%3D
+            - generic [ref=e248]: 39:40
+          - generic [ref=e250]:
+            - generic [ref=e251]:
+              - heading "Gold to Unreal Reload Ranked Speedrun (Fortnite Ranked) 39 minutes" [level=3] [ref=e252]:
+                - link "Gold to Unreal Reload Ranked Speedrun (Fortnite Ranked) 39 minutes" [ref=e253]:
+                  - /url: /watch?v=wGP5zVSYggw&pp=ugUHEgVlbi1VUw%3D%3D
+                  - text: Gold to Unreal Reload Ranked Speedrun (Fortnite Ranked)
+              - generic [ref=e255]:
+                - generic [ref=e257]: Metaa
+                - generic [ref=e258]:
+                  - generic [ref=e259]: 237K views
+                  - generic [ref=e260]: •
+                  - generic [ref=e261]: 2 months ago
+            - button "More actions" [ref=e264]:
+              - generic [ref=e436]:
+                - img
+        - generic [ref=e271] [cursor=pointer]:
+          - link [ref=e272]:
+            - /url: /watch?v=PQrjh1BN1f4&pp=ugUEEgJlbtIHCQmHCgGHKiGM7w%3D%3D
+            - generic [ref=e278]: 25:35
+          - generic [ref=e280]:
+            - generic [ref=e281]:
+              - heading "Puzzles That Look Easy, But Are Actually IMPOSSIBLE! 25 minutes" [level=3] [ref=e282]:
+                - link "Puzzles That Look Easy, But Are Actually IMPOSSIBLE! 25 minutes" [ref=e283]:
+                  - /url: /watch?v=PQrjh1BN1f4&pp=ugUEEgJlbtIHCQmHCgGHKiGM7w%3D%3D
+                  - text: Puzzles That Look Easy, But Are Actually IMPOSSIBLE!
+              - generic [ref=e285]:
+                - generic [ref=e287]: Make Waves
+                - generic [ref=e288]:
+                  - generic [ref=e289]: 7.1M views
+                  - generic [ref=e290]: •
+                  - generic [ref=e291]: 2 months ago
+            - button "More actions" [ref=e294]:
+              - generic [ref=e438]:
+                - img
+        - generic [ref=e301] [cursor=pointer]:
+          - link [ref=e302]:
+            - /url: /watch?v=gWySwK9JIOQ
+            - generic [ref=e308]: 16:17
+          - generic [ref=e310]:
+            - generic [ref=e311]:
+              - heading "Using Cheats To Troll a Switch Only TikTok Clan 16 minutes" [level=3] [ref=e312]:
+                - link "Using Cheats To Troll a Switch Only TikTok Clan 16 minutes" [ref=e313]:
+                  - /url: /watch?v=gWySwK9JIOQ
+                  - text: Using Cheats To Troll a Switch Only TikTok Clan
+              - generic [ref=e315]:
+                - generic [ref=e317]:
+                  - text: Renju
+                  - img [ref=e320]:
+                    - generic [ref=e440]:
+                      - img
+                - generic [ref=e321]:
+                  - generic [ref=e322]: 8.8K views
+                  - generic [ref=e323]: •
+                  - generic [ref=e324]: 17 hours ago
+                - generic [ref=e329]: New
+            - button "More actions" [ref=e332]:
+              - generic [ref=e442]:
+                - img
+        - generic [ref=e444] [cursor=pointer]:
+          - link [ref=e445]:
+            - /url: /watch?v=oYgpv14tmeo&pp=0gcJCYcKAYcqIYzv
+            - generic [ref=e451]: 28:42
+          - generic [ref=e453]:
+            - generic [ref=e454]:
+              - heading "Fortnite Chapter 2 Season 3 Solo Game Win Victory Royale (No Talking) 28 minutes" [level=3] [ref=e455]:
+                - link "Fortnite Chapter 2 Season 3 Solo Game Win Victory Royale (No Talking) 28 minutes" [ref=e456]:
+                  - /url: /watch?v=oYgpv14tmeo&pp=0gcJCYcKAYcqIYzv
+                  - text: Fortnite Chapter 2 Season 3 Solo Game Win Victory Royale (No Talking)
+              - generic [ref=e458]:
+                - generic [ref=e460]:
+                  - text: Anthony Allen
+                  - img [ref=e463]:
+                    - generic [ref=e465]:
+                      - img
+                - generic [ref=e466]:
+                  - generic [ref=e467]: 9.6K views
+                  - generic [ref=e468]: •
+                  - generic [ref=e469]: 5 years ago
+            - button "More actions" [ref=e472]:
+              - generic [ref=e476]:
+                - img
+        - generic [ref=e481] [cursor=pointer]:
+          - link [ref=e482]:
+            - /url: /watch?v=hROVKXSdGyA
+            - generic [ref=e488]: 16:38
+          - generic [ref=e490]:
+            - generic [ref=e491]:
+              - heading "Giving Fortnite Season 8 A Second Chance 16 minutes" [level=3] [ref=e492]:
+                - link "Giving Fortnite Season 8 A Second Chance 16 minutes" [ref=e493]:
+                  - /url: /watch?v=hROVKXSdGyA
+                  - text: Giving Fortnite Season 8 A Second Chance
+              - generic [ref=e495]:
+                - generic [ref=e497]: Jakus
+                - generic [ref=e498]:
+                  - generic [ref=e499]: 386K views
+                  - generic [ref=e500]: •
+                  - generic [ref=e501]: 1 year ago
+            - button "More actions" [ref=e504]:
+              - generic [ref=e508]:
+                - img
+        - generic [ref=e513] [cursor=pointer]:
+          - link [ref=e514]:
+            - /url: /watch?v=DSEe0lAqlEU
+            - generic [ref=e520]: 51:35
+          - generic [ref=e522]:
+            - generic [ref=e523]:
+              - heading "157 Elimination \"RANKED RELOAD” Gameplay Wins (Fortnite Chapter 7 Keyboard & Mouse) 51 minutes" [level=3] [ref=e524]:
+                - link "157 Elimination \"RANKED RELOAD” Gameplay Wins (Fortnite Chapter 7 Keyboard & Mouse) 51 minutes" [ref=e525]:
+                  - /url: /watch?v=DSEe0lAqlEU
+                  - text: 157 Elimination "RANKED RELOAD” Gameplay Wins (Fortnite Chapter 7 Keyboard & Mouse)
+              - generic [ref=e527]:
+                - generic [ref=e529]: Gurama
+                - generic [ref=e530]:
+                  - generic [ref=e531]: 9.8K views
+                  - generic [ref=e532]: •
+                  - generic [ref=e533]: 1 day ago
+                - generic [ref=e538]: New
+            - button "More actions" [ref=e541]:
+              - generic [ref=e545]:
+                - img
+        - generic [ref=e550] [cursor=pointer]:
+          - link [ref=e551]:
+            - /url: /watch?v=-6IBvlS3Iy0&pp=0gcJCYcKAYcqIYzv
+            - generic [ref=e557]: 19:06
+          - generic [ref=e559]:
+            - generic [ref=e560]:
+              - heading "Season 8 Soon! | Random Squad Win | Fortnite | No Commentary 19 minutes" [level=3] [ref=e561]:
+                - link "Season 8 Soon! | Random Squad Win | Fortnite | No Commentary 19 minutes" [ref=e562]:
+                  - /url: /watch?v=-6IBvlS3Iy0&pp=0gcJCYcKAYcqIYzv
+                  - text: Season 8 Soon! | Random Squad Win | Fortnite | No Commentary
+              - generic [ref=e564]:
+                - generic [ref=e566]: ImHagan
+                - generic [ref=e567]:
+                  - generic [ref=e568]: 2.5K views
+                  - generic [ref=e569]: •
+                  - generic [ref=e570]: 6 years ago
+            - button "More actions" [ref=e573]:
+              - generic [ref=e577]:
+                - img
+        - generic [ref=e582] [cursor=pointer]:
+          - link [ref=e583]:
+            - /url: /watch?v=uzX9J4N96zM
+            - generic [ref=e589]: 21:57
+          - generic [ref=e591]:
+            - generic [ref=e592]:
+              - 'heading "Fortnite: Solo Win Season 8 Throwback Gameplay (No Commentary) 21 minutes" [level=3] [ref=e593]':
+                - 'link "Fortnite: Solo Win Season 8 Throwback Gameplay (No Commentary) 21 minutes" [ref=e594]':
+                  - /url: /watch?v=uzX9J4N96zM
+                  - text: "Fortnite: Solo Win Season 8 Throwback Gameplay (No Commentary)"
+              - generic [ref=e596]:
+                - generic [ref=e598]: Tcade
+                - generic [ref=e599]:
+                  - generic [ref=e600]: 21K views
+                  - generic [ref=e601]: •
+                  - generic [ref=e602]: 5 years ago
+            - button "More actions" [ref=e605]:
+              - generic [ref=e609]:
+                - img
+        - generic [ref=e614] [cursor=pointer]:
+          - link [ref=e615]:
+            - /url: /watch?v=PD4X420Pbco
+            - generic [ref=e621]: 16:36
+          - generic [ref=e623]:
+            - generic [ref=e624]:
+              - heading "Evolution of All Fortnite Lobby Backgrounds (Chapter 1 Season 1 - Chapter 6 Season 4) 16 minutes" [level=3] [ref=e625]:
+                - link "Evolution of All Fortnite Lobby Backgrounds (Chapter 1 Season 1 - Chapter 6 Season 4) 16 minutes" [ref=e626]:
+                  - /url: /watch?v=PD4X420Pbco
+                  - text: Evolution of All Fortnite Lobby Backgrounds (Chapter 1 Season 1 - Chapter 6 Season 4)
+              - generic [ref=e628]:
+                - generic [ref=e630]:
+                  - text: Zylaz
+                  - img [ref=e633]:
+                    - generic [ref=e635]:
+                      - img
+                - generic [ref=e636]:
+                  - generic [ref=e637]: 35K views
+                  - generic [ref=e638]: •
+                  - generic [ref=e639]: 5 months ago
+            - button "More actions" [ref=e642]:
+              - generic [ref=e646]:
+                - img
+        - generic [ref=e651] [cursor=pointer]:
+          - link [ref=e652]:
+            - /url: /watch?v=cl8c3rWg_Co
+            - generic [ref=e658]: 34:52
+          - generic [ref=e660]:
+            - generic [ref=e661]:
+              - heading "Surah Yusuf سورة يوسف | Pregnant Mother Must Listen Everyday | Quran Ruqyah for Your Upcoming Baby 34 minutes" [level=3] [ref=e662]:
+                - link "Surah Yusuf سورة يوسف | Pregnant Mother Must Listen Everyday | Quran Ruqyah for Your Upcoming Baby 34 minutes" [ref=e663]:
+                  - /url: /watch?v=cl8c3rWg_Co
+                  - text: Surah Yusuf سورة يوسف | Pregnant Mother Must Listen Everyday | Quran Ruqyah for Your Upcoming Baby
+              - generic [ref=e665]:
+                - generic [ref=e667]: Quran For Inner
+                - generic [ref=e668]:
+                  - generic [ref=e669]: 1.7M views
+                  - generic [ref=e670]: •
+                  - generic [ref=e671]: 4 days ago
+                - generic [ref=e676]: New
+            - button "More actions" [ref=e679]:
+              - generic [ref=e683]:
+                - img
+        - generic [ref=e688] [cursor=pointer]:
+          - link [ref=e689]:
+            - /url: /watch?v=_HD-xPblJ8o
+            - generic [ref=e695]: 21:40
+          - generic [ref=e697]:
+            - generic [ref=e698]:
+              - heading "Fortnite 3rd season five solo win ( no commentary ) 21 minutes" [level=3] [ref=e699]:
+                - link "Fortnite 3rd season five solo win ( no commentary ) 21 minutes" [ref=e700]:
+                  - /url: /watch?v=_HD-xPblJ8o
+                  - text: Fortnite 3rd season five solo win ( no commentary )
+              - generic [ref=e702]:
+                - generic [ref=e704]: Decay
+                - generic [ref=e705]:
+                  - generic [ref=e706]: 4.5K views
+                  - generic [ref=e707]: •
+                  - generic [ref=e708]: 7 years ago
+            - button "More actions" [ref=e711]:
+              - generic [ref=e715]:
+                - img
+        - generic [ref=e720] [cursor=pointer]:
+          - link [ref=e721]:
+            - /url: /watch?v=7W3LedzaGEE&pp=ugUEEgJlbg%3D%3D
+            - generic [ref=e727]: 22:01
+          - generic [ref=e729]:
+            - generic [ref=e730]:
+              - heading "Fortnite Hide & Seek But Your SIZE Changes! 22 minutes" [level=3] [ref=e731]:
+                - link "Fortnite Hide & Seek But Your SIZE Changes! 22 minutes" [ref=e732]:
+                  - /url: /watch?v=7W3LedzaGEE&pp=ugUEEgJlbg%3D%3D
+                  - text: Fortnite Hide & Seek But Your SIZE Changes!
+              - generic [ref=e734]:
+                - generic [ref=e736]:
+                  - text: Ali-A
+                  - img [ref=e739]:
+                    - generic [ref=e741]:
+                      - img
+                - generic [ref=e742]:
+                  - generic [ref=e743]: 75K views
+                  - generic [ref=e744]: •
+                  - generic [ref=e745]: 4 days ago
+                - generic [ref=e750]: New
+            - button "More actions" [ref=e753]:
+              - generic [ref=e757]:
+                - img
+        - generic [ref=e762] [cursor=pointer]:
+          - link [ref=e763]:
+            - /url: /watch?v=Dt6mLxiqIbs
+            - generic [ref=e769]: 21:21
+          - generic [ref=e771]:
+            - generic [ref=e772]:
+              - 'heading "Season 8 \"Luxe\" Skin!! 12 Elims!! - Fortnite: Battle Royale Gameplay 21 minutes" [level=3] [ref=e773]':
+                - 'link "Season 8 \"Luxe\" Skin!! 12 Elims!! - Fortnite: Battle Royale Gameplay 21 minutes" [ref=e774]':
+                  - /url: /watch?v=Dt6mLxiqIbs
+                  - text: "Season 8 \"Luxe\" Skin!! 12 Elims!! - Fortnite: Battle Royale Gameplay"
+              - generic [ref=e776]:
+                - generic [ref=e778]: panduhz
+                - generic [ref=e779]:
+                  - generic [ref=e780]: 5.8K views
+                  - generic [ref=e781]: •
+                  - generic [ref=e782]: 6 years ago
+            - button "More actions" [ref=e785]:
+              - generic [ref=e789]:
+                - img
+        - generic [ref=e794] [cursor=pointer]:
+          - link [ref=e795]:
+            - /url: /watch?v=TXZXwDi1dvc
+            - generic [ref=e801]: 17:24
+          - generic [ref=e803]:
+            - generic [ref=e804]:
+              - heading "Chapter 2 Season 2 Solo Win - Fortnite Gameplay No Commentary 17 minutes" [level=3] [ref=e805]:
+                - link "Chapter 2 Season 2 Solo Win - Fortnite Gameplay No Commentary 17 minutes" [ref=e806]:
+                  - /url: /watch?v=TXZXwDi1dvc
+                  - text: Chapter 2 Season 2 Solo Win - Fortnite Gameplay No Commentary
+              - generic [ref=e808]:
+                - generic [ref=e810]: ghost
+                - generic [ref=e811]:
+                  - generic [ref=e812]: 57K views
+                  - generic [ref=e813]: •
+                  - generic [ref=e814]: 5 years ago
+            - button "More actions" [ref=e817]:
+              - generic [ref=e821]:
+                - img
+        - generic [ref=e826] [cursor=pointer]:
+          - link [ref=e827]:
+            - /url: /watch?v=0Bm6mWrGsQI&pp=ugUEEgJlbtIHCQmHCgGHKiGM7w%3D%3D
+            - generic [ref=e833]: 11:19
+          - generic [ref=e835]:
+            - generic [ref=e836]:
+              - heading "Our FIRST LOOK At Fortnite Season 2! 11 minutes, 19 seconds" [level=3] [ref=e837]:
+                - link "Our FIRST LOOK At Fortnite Season 2! 11 minutes, 19 seconds" [ref=e838]:
+                  - /url: /watch?v=0Bm6mWrGsQI&pp=ugUEEgJlbtIHCQmHCgGHKiGM7w%3D%3D
+                  - text: Our FIRST LOOK At Fortnite Season 2!
+              - generic [ref=e840]:
+                - generic [ref=e842]:
+                  - text: Top5Gaming
+                  - img [ref=e845]:
+                    - generic [ref=e847]:
+                      - img
+                - generic [ref=e848]:
+                  - generic [ref=e849]: 340K views
+                  - generic [ref=e850]: •
+                  - generic [ref=e851]: 14 hours ago
+                - generic [ref=e856]: New
+            - button "More actions" [ref=e859]:
+              - generic [ref=e863]:
+                - img
+        - generic [ref=e868] [cursor=pointer]:
+          - link [ref=e869]:
+            - /url: /watch?v=rehYp8OraKM&pp=0gcJCYcKAYcqIYzv
+            - generic [ref=e875]: 20:08
+          - generic [ref=e877]:
+            - generic [ref=e878]:
+              - heading "I Asked 96 Fortnite Players to HUNT ME 20 minutes" [level=3] [ref=e879]:
+                - link "I Asked 96 Fortnite Players to HUNT ME 20 minutes" [ref=e880]:
+                  - /url: /watch?v=rehYp8OraKM&pp=0gcJCYcKAYcqIYzv
+                  - text: I Asked 96 Fortnite Players to HUNT ME
+              - generic [ref=e882]:
+                - generic [ref=e884]:
+                  - text: SypherPK
+                  - img [ref=e887]:
+                    - generic [ref=e889]:
+                      - img
+                - generic [ref=e890]:
+                  - generic [ref=e891]: 461K views
+                  - generic [ref=e892]: •
+                  - generic [ref=e893]: 5 days ago
+                - generic [ref=e898]: New
+            - button "More actions" [ref=e901]:
+              - generic [ref=e905]:
+                - img
+        - generic [ref=e910] [cursor=pointer]:
+          - link [ref=e911]:
+            - /url: /watch?v=swvOwGcMvJw
+            - generic [ref=e917]: 11:14
+          - generic [ref=e919]:
+            - generic [ref=e920]:
+              - heading "Fortnite Just Gave Us Aimbot... 11 minutes, 14 seconds" [level=3] [ref=e921]:
+                - link "Fortnite Just Gave Us Aimbot... 11 minutes, 14 seconds" [ref=e922]:
+                  - /url: /watch?v=swvOwGcMvJw
+                  - text: Fortnite Just Gave Us Aimbot...
+              - generic [ref=e924]:
+                - generic [ref=e926]:
+                  - text: Typical Gamer
+                  - img [ref=e929]:
+                    - generic [ref=e931]:
+                      - img
+                - generic [ref=e932]:
+                  - generic [ref=e933]: 257K views
+                  - generic [ref=e934]: •
+                  - generic [ref=e935]: 5 days ago
+                - generic [ref=e940]: New
+            - button "More actions" [ref=e943]:
+              - generic [ref=e947]:
+                - img
+        - generic [ref=e952] [cursor=pointer]:
+          - link [ref=e953]:
+            - /url: /watch?v=Dg4Y4axMIfE
+            - generic [ref=e959]: 21:07
+          - generic [ref=e961]:
+            - generic [ref=e962]:
+              - heading "Season 6 - 25 Kills Solo | Console PS4 - Fortnite Gameplay 21 minutes" [level=3] [ref=e963]:
+                - link "Season 6 - 25 Kills Solo | Console PS4 - Fortnite Gameplay 21 minutes" [ref=e964]:
+                  - /url: /watch?v=Dg4Y4axMIfE
+                  - text: Season 6 - 25 Kills Solo | Console PS4 - Fortnite Gameplay
+              - generic [ref=e966]:
+                - generic [ref=e968]: Erouce
+                - generic [ref=e969]:
+                  - generic [ref=e970]: 240K views
+                  - generic [ref=e971]: •
+                  - generic [ref=e972]: 7 years ago
+            - button "More actions" [ref=e975]:
+              - generic [ref=e979]:
+                - img
+        - generic [ref=e984] [cursor=pointer]:
+          - link [ref=e985]:
+            - /url: /watch?v=k1rFhJG0Gjw
+            - generic [ref=e991]: 19:33
+          - generic [ref=e993]:
+            - generic [ref=e994]:
+              - heading "Season 6 | Solo Win | Fortnite | No Commentary 19 minutes" [level=3] [ref=e995]:
+                - link "Season 6 | Solo Win | Fortnite | No Commentary 19 minutes" [ref=e996]:
+                  - /url: /watch?v=k1rFhJG0Gjw
+                  - text: Season 6 | Solo Win | Fortnite | No Commentary
+              - generic [ref=e998]:
+                - generic [ref=e1000]: ImHagan
+                - generic [ref=e1001]:
+                  - generic [ref=e1002]: 45K views
+                  - generic [ref=e1003]: •
+                  - generic [ref=e1004]: 7 years ago
+            - button "More actions" [ref=e1007]:
+              - generic [ref=e1011]:
+                - img
